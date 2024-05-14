@@ -1,4 +1,4 @@
-app-id: com.github.aruiz.Autofirma
+id: com.github.aruiz.Autofirma
 runtime: org.freedesktop.Platform
 sdk: org.freedesktop.Sdk
 runtime-version: "23.08"
@@ -28,10 +28,9 @@ modules:
         - sh install-dnie.sh
       sources:
         - type: file
-          filename: libpkcs11-dnie_1.6.8_amd64.deb
+          dest-filename: libpkcs11-dnie_1.6.8_amd64.deb
           url: https://www.dnielectronico.es/descargas/distribuciones_linux/libpkcs11-dnie_1.6.8_amd64.deb
           sha256: 851d7438b2c0ca601e492e69b2bbd279c0ea291aa8881d932b8e0a56f6261b09
-          size: 1440
         
         - type: file
           path: install-dnie.sh
@@ -42,11 +41,9 @@ modules:
         - ./install-autofirma.sh
       sources:
         - type: archive
-          filename: AutoFirma_Linux_Debian.zip
+          dest-filename: AutoFirma_Linux_Debian.zip
           url: https://estaticos.redsara.es/comunes/autofirma/currentversion/AutoFirma_Linux_Debian.zip
           sha256: 5b0660a9e1fbcba6aa81c8142429084e72f9d2b306c6bc1c73b7c860e6c81ab9
-          size: 51564
-
         - type: file
           path: install-autofirma.sh
         - type: file
