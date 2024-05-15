@@ -17,6 +17,7 @@ finish-args:
     - --device=dri
     - --filesystem=home
     - --persist=.java
+    - --persist=.afirma
 modules:
     - name: openjdk
       buildsystem: simple
