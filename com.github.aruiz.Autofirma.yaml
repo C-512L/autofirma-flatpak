@@ -43,7 +43,7 @@ modules:
       sources:
         - type: archive
           dest-filename: AutoFirma_Linux_Debian.zip
-          url: https://estaticos.redsara.es/comunes/autofirma/currentversion/AutoFirma_Linux_Debian.zip
+          url: https://estaticos.redsara.es/comunes/autofirma/1/8/2/AutoFirma_Linux_Debian.zip
           sha256: 5b0660a9e1fbcba6aa81c8142429084e72f9d2b306c6bc1c73b7c860e6c81ab9
         - type: file
           path: install-autofirma.sh
