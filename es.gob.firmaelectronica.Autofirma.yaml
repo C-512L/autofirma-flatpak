@@ -6,7 +6,7 @@ rename-icon: afirma
 rename-desktop-file: afirma.desktop
 sdk-extensions:
     - org.freedesktop.Sdk.Extension.openjdk11
-command: autofirma
+command: afirma-wrapper
 finish-args:
     - --env=GTK_THEME=Adwaita:light
     - --env=PATH=/app/jre/bin:/app/bin:/usr/bin
@@ -15,9 +15,10 @@ finish-args:
     - --socket=pulseaudio
     - --share=network
     - --device=dri
-    - --filesystem=home
     - --persist=.java
     - --persist=.afirma
+    - --filesystem=~/.var/app/org.mozilla.firefox/.mozilla
+    - --filesystem=xdg-documents
 modules:
     - name: openjdk
       buildsystem: simple
@@ -27,7 +28,7 @@ modules:
     - name: dnie
       buildsystem: simple
       build-commands:
-        - sh install-dnie.sh
+        - ./install-dnie.sh
       sources:
         - type: file
           dest-filename: libpkcs11-dnie_1.6.8_amd64.deb
@@ -52,3 +53,5 @@ modules:
           path: afirma.desktop
         - type: file
           path: AutoFirma.svg
+        - type: file
+          path: afirma-wrapper.sh

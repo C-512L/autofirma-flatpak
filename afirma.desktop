@@ -3,7 +3,7 @@
 [Desktop Entry]
 Name=AutoFirma
 MimeType=x-scheme-handler/afirma;
-Exec=autofirma %u
+Exec=afirma-wrapper %u
 Icon=afirma
 Type=Application
 Terminal=false
