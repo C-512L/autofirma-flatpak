@@ -6,6 +6,7 @@ sdk-extensions:
     - org.freedesktop.Sdk.Extension.openjdk11
 command: autofirma
 finish-args:
+    - --env=GTK_THEME=Adwaita:light
     - --env=PATH=/app/jre/bin:/app/bin:/usr/bin
     - --env=JAVA_HOME=/app/jre
     - --env=JAVA=/app/jre/bin/java
