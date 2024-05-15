@@ -2,6 +2,8 @@ id: com.github.aruiz.Autofirma
 runtime: org.freedesktop.Platform
 sdk: org.freedesktop.Sdk
 runtime-version: "23.08"
+rename-icon: afirma
+rename-desktop-file: afirma.desktop
 sdk-extensions:
     - org.freedesktop.Sdk.Extension.openjdk11
 command: autofirma
@@ -47,6 +49,6 @@ modules:
         - type: file
           path: install-autofirma.sh
         - type: file
-          path: com.github.aruiz.Autofirma.desktop
+          path: afirma.desktop
         - type: file
           path: AutoFirma.svg

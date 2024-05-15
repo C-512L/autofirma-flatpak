@@ -4,7 +4,6 @@
 Name=AutoFirma
 MimeType=x-scheme-handler/afirma;
 Exec=autofirma %u
-Icon=com.github.aruiz.Autofirma
+Icon=afirma
 Type=Application
 Terminal=false
-X-Flatpak=com.github.aruiz.Autofirma

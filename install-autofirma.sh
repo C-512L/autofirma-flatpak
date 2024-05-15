@@ -9,5 +9,5 @@ sed -i "s/ \/usr\// \/app\//" deb-package/usr/bin/autofirma
 install -Dm755 deb-package/usr/bin/autofirma                                /app/bin/autofirma
 install -Dm644 deb-package/usr/lib/AutoFirma/AutoFirma.jar                  /app/lib/AutoFirma/AutoFirma.jar
 install -Dm644 deb-package/usr/lib/AutoFirma/AutoFirmaConfigurador.jar      /app/lib/AutoFirma/AutoFirmaConfigurador.jar
-install -Dm644 AutoFirma.svg                                                "/app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg"
-install -Dm644 "${FLATPAK_ID}.desktop"                                      "/app/share/applications/${FLATPAK_ID}.desktop"
+install -Dm644 AutoFirma.svg                                                "/app/share/icons/hicolor/scalable/apps/afirma.svg"
+install -Dm644 "afirma.desktop"                                             "/app/share/applications/afirma.desktop"
