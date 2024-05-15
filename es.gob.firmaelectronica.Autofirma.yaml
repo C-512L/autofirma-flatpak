@@ -1,4 +1,4 @@
-id: com.github.aruiz.Autofirma
+id: es.gob.firmaelectronica.Autofirma
 runtime: org.freedesktop.Platform
 sdk: org.freedesktop.Sdk
 runtime-version: "23.08"
