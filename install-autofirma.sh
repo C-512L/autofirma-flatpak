@@ -12,7 +12,7 @@ install -Dm644 deb-package/usr/lib/AutoFirma/AutoFirma.png                  /app
 install -Dm644 deb-package/usr/lib/AutoFirma/AutoFirmaConfigurador.jar      /app/lib/AutoFirma/AutoFirmaConfigurador.jar
 
 mkdir -p /app/share/icons/hicolor/scalable/
-install -Dm644 AutoFirma.svg                                                /app/share/icons/hicolor/scalable/com.github.aruiz.Autofirma.svg
+install -Dm644 AutoFirma.svg                                                "/app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg"
 
 mkdir -p /app/share/applications/
 install -Dm644 com.github.aruiz.Autofirma.desktop                           /app/share/applications/com.github.aruiz.Autofirma.desktop
