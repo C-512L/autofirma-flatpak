@@ -10,6 +10,7 @@ command: afirma-wrapper
 finish-args:
     - --env=GTK_THEME=Adwaita:light
     - --env=PATH=/app/jre/bin:/app/bin:/usr/bin
+    - --env=AUTOFIRMA_AVOID_UPDATE_CHECK=true
     - --share=ipc
     - --socket=x11
     - --socket=pulseaudio
