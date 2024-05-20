@@ -5,7 +5,8 @@ runtime-version: "23.08"
 rename-icon: afirma
 rename-desktop-file: afirma.desktop
 sdk-extensions:
-    - org.freedesktop.Sdk.Extension.openjdk11
+  # See https://github.com/ctt-gob-es/clienteafirma/blob/v1.8.2/afirma-simple/src/main/java/es/gob/afirma/standalone/SimpleAfirma.java#L154
+  - org.freedesktop.Sdk.Extension.openjdk17
 command: afirma-wrapper
 finish-args:
     - --env=GTK_THEME=Adwaita:light
@@ -23,7 +24,7 @@ modules:
     - name: openjdk
       buildsystem: simple
       build-commands:
-        - /usr/lib/sdk/openjdk11/install.sh
+        - /usr/lib/sdk/openjdk17/install.sh
 
     - name: dnie
       buildsystem: simple
