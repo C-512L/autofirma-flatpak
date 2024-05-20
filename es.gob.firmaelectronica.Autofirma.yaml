@@ -13,7 +13,6 @@ finish-args:
     - --env=AUTOFIRMA_AVOID_UPDATE_CHECK=true
     - --share=ipc
     - --socket=x11
-    - --socket=pulseaudio
     - --share=network
     - --device=dri
     - --persist=.java
