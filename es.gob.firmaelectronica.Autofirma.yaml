@@ -12,6 +12,7 @@ finish-args:
     - --env=GTK_THEME=Adwaita:light
     - --env=PATH=/app/jre/bin:/app/bin:/usr/bin
     - --env=AUTOFIRMA_AVOID_UPDATE_CHECK=true
+    - --env=JDK_JAVA_OPTIONS=--add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED
     - --share=ipc
     - --socket=x11
     - --share=network
